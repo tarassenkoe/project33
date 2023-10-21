@@ -1,5 +1,5 @@
 let Ids=[]
-let Pregnancies=[]
+let PregnanciesNumbers=[]
 let Glucoses=[]
 let BloodPressures=[]
 let SkinThicknesses=[]
@@ -9,22 +9,34 @@ let DiabetesPedigreeFunctions=[]
 let Ages=[]
 let Outcomes=[]
 
-for (let i=0;i<Healthcare-Diabetes.
+for (let i=0;i<Results.length;i++) {
+  row=Results[i];
+  Ids.push(row.Id);
+  PregnanciesNumbers.push(row.Pregnancies);
+  Glucoses.push(row.Glucose);
+  BloodPressures.push(row.BloodPressure);
+  SkinThicknesses.push(row.SkinThickness);
+  Insulins.push(row.Insulin);
+  BMIs.push(row.BMI);
+  DiabetesPedigreeFunctions.push(DiabetesPedigreeFunction);
+  Ages.push(Age);
+  Outcomes.push(Outcome);
+  let trace1={x:Glucoses, y: Outcomes, text:"Glucose Levels", name:"Glucose",type:"bar"};
+  let data=[trace1];
+  let layout={title:"Glucose Levels Vs. Outcome",barmode:"group",margin:{l:50,r:50,b:200,t:50,pad:4}};
+  Plotly.newplot("plot",data,layout);
 
+  let trace2={x:BloodPressures, y: Outcomes, text:"BloodPressure Levels", name:"BloodPressure", type:"bar"};
+  let data=[trace2];
+  let layout={title:"BloodPressure Levels Vs. Outcome",barmode:"group",margin:{l:50,r:50,b:200,t:50,pad:4}};
+  Plotly.newplot("plot",data,layout);
 
+  let trace3={x:Ages, y: Outcomes, text:"Ages", name:"Age",type:"bar"};
+  let data=[trace3];
+  let layout={title:"Ages Vs. Outcome",barmode:"group",margin:{l:50,r:50,b:200,t:50,pad:4}};
+  Plotly.newplot("plot",data,layout);
 
-
-
-let trace1 = {
-  x: books,
-  y: timesRead,
-  type: 'bar'
-};
-
-let data = [trace1];
-
-let layout = {
-  title: title
-};
-
-Plotly.newPlot("plot", data, layout);
+  let trace4={x:BMIs, y: Outcomes, text:"BMIs", name:"BMI",type:"bar"};
+  let data=[trace4];
+  let layout={title:"BMIs Vs. Outcome",barmode:"group",margin:{l:50,r:50,b:200,t:50,pad:4}};
+  Plotly.newplot("plot",data,layout);
