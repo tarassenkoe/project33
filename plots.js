@@ -1,10 +1,19 @@
-let name = 'Travis Taylor'
+let Ids=[]
+let Pregnancies=[]
+let Glucoses=[]
+let BloodPressures=[]
+let SkinThicknesses=[]
+let Insulins=[]
+let BMIs=[]
+let DiabetesPedigreeFunctions=[]
+let Ages=[]
+let Outcomes=[]
 
-let title = `${name}'s First Plotly Chart`
+for (let i=0;i<Healthcare-Diabetes.
 
-let books = ["The Visual Display of Quantitative Information", "Automate the Boring Stuff", "Data Science from Scratch"]
 
-let timesRead = [100, 50, 25]
+
+
 
 let trace1 = {
   x: books,
