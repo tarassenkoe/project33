@@ -40,3 +40,4 @@ for (let i=0;i<Results.length;i++) {
   let data4=[trace4];
   let layout4={title:"BMIs Vs. Outcome",barmode:"group",margin:{l:50,r:50,b:200,t:50,pad:4}};
   Plotly.newplot("plot",data4,layout4);
+};
