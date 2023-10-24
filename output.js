@@ -1,4 +1,4 @@
- let Results = [
+let Results = [
     {
         Id: 1,
         Pregnancies: 6,
