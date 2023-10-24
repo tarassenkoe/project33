@@ -35,7 +35,7 @@ let layout4={title:"BMIs Vs. Outcome",barmode:"group",margin:{l:50,r:50,b:200,t:
 let data=[trace1,trace2,trace3,trace4]
 
 Plotly.newPlot("plot",data,layout1)
-// Plotly.newplot("plot",data1,layout1);  
-// Plotly.newplot("plot",data2,layout2);  
-// Plotly.newplot("plot",data3,layout3); 
-// Plotly.newplot("plot",data4,layout4);
+Plotly.newplot("plot",data1,layout1);  
+Plotly.newplot("plot",data2,layout2);  
+Plotly.newplot("plot",data3,layout3); 
+Plotly.newplot("plot",data4,layout4);
